@@ -9,8 +9,10 @@ import org.slf4j.LoggerFactory;
 public class MyApp {
 
     private static final Logger logger = LoggerFactory.getLogger("logback");
-
+    private static final int NUMBERS = 5;
     public static void main(String[] args) {
-        logger.info("Hello Jenkins!");
+        for (int i = 0; i < NUMBERS; i++) {
+            logger.info("Hello Jenkins!");
+        }
     }
 }
